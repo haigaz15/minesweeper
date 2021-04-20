@@ -11,7 +11,11 @@ const schema = new Schema({
         unique: true,
         minLength: 4
     },
-
+    email: {
+        type: String,
+        trim: true,
+        required: true
+    },
     password: {
         type: String,
         required: true,
